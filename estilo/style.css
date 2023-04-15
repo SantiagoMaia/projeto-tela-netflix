@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-image: url(../imagens/netflix-s.jpg);
+}
