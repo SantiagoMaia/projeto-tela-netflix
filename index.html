@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <div class="netflix"></div>
-    <div class="pais">
-        <select name="pais" id="ipais">
-            <option value="PT">Português</option>
-            <option value="E">English</option>
-        </select>
-    </div>
-    <div class="botao">
-        <button type="submit">Entrar</button>
-    </div>
-    <div class="chamada">
-        <h1>Filmes, séries e muito mais. Sem limites</h1>
-        <p>Assista onde quiser. Cancele quando quiser.</p>
-    </div>
-    <div class="texto">
-        <p>Quer assistit? Informe seu e-mail para criar ou reiniciar sua assinatura.</p>
-    </div>
-    <div class="formulario">
-        <form action="" method="post" autocomplete="on">
-            <input type="email" name="email" id="iemail" placeholder="Email" required>
-        </form>
-    </div>
-    <div class="botao1">
-        <input type="button" value="Vamos lá >">
-    </div>
+    <main>
+        <div class="netflix">
+            <img src="imagens/netflix-94.png" alt="netflix">
+        </div>
+        
+        <div class="idioma">
+            <span class="material-symbols-outlined" onclick="clickMenu()">
+                language</span>
+            <select name="idioma" id="iidioma">
+                <optiongroup>
+                    <option value="pt">Portuguese</option>
+                    <option value="en">English</option>
+                </optiongroup>
+            </select>
+        </div>
+        <div class="entrar">
+            <button>
+                <a href="#">Entrar</a>
+            </button>
+        </div>
+        <div class="header">
+            <h1>Filmes, séries e muito mais. Sem limites</h1>
+            <p>Assista onde quiser. Cancele quando quiser.</p>
+            <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        </div>
+        <div class="form">
+            <form action="" method="post" autocomplete="on">
+                <label for="iemail"> Email</label>
+                <input type="email" name="email" id="iemail" placeholder="Email" required>
+            </form>
+        </div>
+        <div class="btn">
+            <button>
+                <a href="#">Vamos lá ></a>
+            </button>
+        </div>
+    </main>
 
+    <script>
+        function clickMenu(){
+            if (iidioma.style.display == 'block'){
+                iidioma.style.display = 'none'
+            } else{
+                iidioma.style.display = 'block'
+            }
+        }
+    </script>
+    
 </body>
 </html>
